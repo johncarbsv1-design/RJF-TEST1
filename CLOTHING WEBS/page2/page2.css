@@ -1,150 +1,328 @@
-.header {
-   position: relative;
-    background-color: rgba(3, 3, 250, 0.436);
-    border-radius: 20px;
-    color: white;
-    height: 75px;
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+width: 100%;
+overflow-x: hidden;
 }
 
 body {
-    background-image: url("page2back.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    min-height: 100vh;
-    margin: 0;
+background-image: url("page2back.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: scroll;
+min-height: 100vh;
+margin: 0;
+width: 100%;
+overflow-x: hidden;
+font-family: Arial, sans-serif;
 }
 
-.logo{
-    position: relative;
-    left: 5px;
-    height: 70px;
-    width: 70px;
-    border-radius: 10px;
+/* HEADER */
+
+.header {
+position: relative;
+background-color: rgba(3, 3, 250, 0.436);
+border-radius: 20px;
+color: white;
+height: 75px;
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+.logo {
+position: relative;
+left: 5px;
+height: 70px;
+width: 70px;
+border-radius: 10px;
+object-fit: cover;
 }
 
 .name {
-    position: absolute;
-    left: 90px;
-    bottom: 0px;
+position: absolute;
+left: 90px;
+bottom: 0;
 }
 
-
+/* NAVIGATION */
 
 .cate {
-    position: absolute;
-    cursor: pointer;
-    top: 29px;
-    right: 750px;
-}
-   
-
-.about{
-     position: absolute;
-    cursor: pointer;
-    top: 29px;
-    right: 570px;
+position: absolute;
+cursor: pointer;
+top: 29px;
+right: 58%;
 }
 
+.about {
+position: absolute;
+cursor: pointer;
+top: 29px;
+right: 44%;
+}
 
 .home {
-    position: absolute;
-    cursor: pointer;
-    left: 900px;
-    top: 28px;
-
+position: absolute;
+cursor: pointer;
+left: 65%;
+top: 28px;
 }
 
-.disc{
-    position: absolute;
-    top: 220px;
-left: 750px;
+/* PAGE TITLE */
+
+.disc {
+position: relative;
+top: 0;
+left: auto;
 color: white;
+text-align: center;
+margin: 100px 20px 0;
+font-size: clamp(25px, 4vw, 40px);
 }
-.exp{
-    color: rgb(96, 226, 96);
-    position: absolute;
-  top: 320px;
-left: 550px;
+
+/* DESCRIPTION */
+
+.exp {
+color: rgb(96, 226, 96);
+position: relative;
+top: 0;
+left: auto;
+text-align: center;
+margin: 20px auto 0;
+padding: 0 20px;
+max-width: 800px;
+font-size: clamp(14px, 2vw, 20px);
 }
+
+/* CATEGORY SECTION */
 
 .categories {
-    position: relative;
-    width: 100%;
-left: 450px;
-top: 400px;
-
-
+position: relative;
+width: 100%;
+left: 0;
+top: 0;
+margin-top: 100px;
 }
 
+/* HORIZONTAL CATEGORY SCROLL */
+
 .category-list {
-    display: flex;
-    gap: 25px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 15px;
+display: flex;
+gap: 25px;
+overflow-x: auto;
+scroll-behavior: smooth;
+padding: 25px;
+width: 100%;
+-webkit-overflow-scrolling: touch;
 }
 
 .category-list::-webkit-scrollbar {
-    display: none;
+display: none;
 }
 
+/* CATEGORY CARDS */
+
 .category {
-    flex: 0 0 180px;
-    text-align: center;
+flex: 0 0 180px;
+text-align: center;
 }
 
 .category img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-
-    transition: transform 0.3s ease;
+display: block;
+width: 180px;
+height: 180px;
+object-fit: cover;
+border-radius: 10px;
+transition: transform 0.3s ease;
 }
 
 .category img:hover {
-    transform: scale(1.2);
+transform: scale(1.08);
 }
 
 .category p {
-    font-size: 18px;
-    font-weight: bold;
+font-size: 18px;
+font-weight: bold;
 }
 
-.pants{
+/* CATEGORY LABELS */
+
+.pants,
+.bags,
+.shoes,
+.shirt,
+.jackets {
 color: white;
 background-color: rgba(42, 42, 255, 0.842);
 border-radius: 10px;
-height: 30px;
-padding-top: 5px;
-} 
-.bags{
-color: white;
-background-color: rgba(42, 42, 255, 0.842);
-border-radius: 10px;
-height: 30px;
-padding-top: 5px;
+min-height: 35px;
+padding: 5px;
+margin-top: 12px;
 }
-.shoes{
-color: white;
-background-color: rgba(42, 42, 255, 0.842);
-border-radius: 10px;
-height: 30px;
-padding-top: 5px;
+
+/* =====================================
+TABLETS
+===================================== */
+
+@media screen and (max-width: 1024px) {
+
+```
+.cate {
+    right: 35%;
 }
-.shirt{
-color: white;
-background-color: rgba(42, 42, 255, 0.842);
-border-radius: 10px;
-height: 30px;
-padding-top: 5px;
+
+.about {
+    right: 20%;
 }
-.jackets{
-color: white;
-background-color: rgba(42, 42, 255, 0.842);
-border-radius: 10px;
-height: 30px;
-padding-top: 5px;
+
+.home {
+    left: auto;
+    right: 8%;
+}
+
+.categories {
+    margin-top: 80px;
+}
+```
+
+}
+
+/* =====================================
+MOBILE PHONES
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+```
+/* HEADER */
+
+.header {
+    height: auto;
+    min-height: 75px;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    left: 0;
+    flex-shrink: 0;
+}
+
+.name {
+    left: 0;
+    bottom: -15px;
+    font-size: 12px;
+}
+
+/* NAVIGATION */
+
+.cate,
+.about,
+.home {
+    position: static;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+/* TITLE */
+
+.disc {
+    margin: 65px 15px 0;
+    font-size: clamp(24px, 6vw, 32px);
+}
+
+/* DESCRIPTION */
+
+.exp {
+    margin-top: 18px;
+    padding: 0 18px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* CATEGORY SECTION */
+
+.categories {
+    margin-top: 45px;
+}
+
+.category-list {
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x proximity;
+}
+
+.category {
+    flex: 0 0 145px;
+    scroll-snap-align: start;
+}
+
+.category img {
+    width: 145px;
+    height: 145px;
+}
+
+.category p {
+    font-size: 16px;
+}
+
+/* KEEP HOVER EFFECT FROM BECOMING TOO LARGE */
+
+.category img:hover {
+    transform: scale(1.04);
+}
+```
+
+}
+
+/* =====================================
+VERY SMALL PHONES
+===================================== */
+
+@media screen and (max-width: 380px) {
+
+```
+.header {
+    padding: 6px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+}
+
+.cate,
+.about,
+.home {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.disc {
+    margin-top: 50px;
+}
+
+.category-list {
+    gap: 18px;
+    padding: 15px;
+}
+
+.category {
+    flex: 0 0 130px;
+}
+
+.category img {
+    width: 130px;
+    height: 130px;
+}
+```
+
 }
