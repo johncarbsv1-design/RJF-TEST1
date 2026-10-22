@@ -1,0 +1,192 @@
+.header {
+    position: relative;
+    background-color: rgba(3, 3, 250, 0.436);
+    border-radius: 20px;
+    color: white;
+    height: 75px;
+}
+
+body {
+    background-image: url("blue.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logo{
+    position: relative;
+    left: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.intro{
+    position: relative;
+    color: white;
+    top: 20px;
+    font-size: x-large;
+    left: 20px;
+}
+
+
+
+.name {
+    position: absolute;
+    left: 90px;
+    bottom: 0px;
+}
+
+
+
+.cate {
+    position: absolute;
+    cursor: pointer;
+    top: 29px;
+    right: 750px;
+}
+   
+
+
+.home {
+    position: absolute;
+    cursor: pointer;
+    left: 900px;
+    top: 28px;
+
+}
+
+.about{
+     position: absolute;
+    cursor: pointer;
+    top: 29px;
+    right: 570px;
+}
+
+
+.bn {
+    position: relative;
+     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(23, 23, 208, 0.667);
+    width: 250px;
+    height: 55px;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    padding-top: 35px;
+    font-size: x-large;
+    top: 170px;
+}
+
+.bn:hover {
+    transform: scale(1.2);
+    background-color: rgba(23, 23, 208, 1);
+}
+
+
+
+.featured {
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+    width: 230px;
+    padding-top: 10px;
+    height: 40px;
+    background-color: rgba(21, 179, 219, 0.864);
+    border-radius: 10px;
+    left: 175px;
+}
+
+.img{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+
+
+
+.bag1{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    top: 30px;
+    left: 20px;
+}
+.jeans{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    top: 30px;
+    left: 70px;
+}
+.shirt{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    top: 30px;
+    left: 120px;
+}
+.pants1{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    width: 138px;
+    top: 250px;
+    left: -425px;
+   
+}
+
+.bag3{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    width: 150px;
+    top: 250px;
+    left: -375px;
+    
+   
+}
+.shoes{
+    position: relative;
+    outline: 3px solid white;
+    outline-offset: 10px;
+    height: 180px;
+    width: 145px;
+    top: 250px;
+    left: -325px;
+   
+}
+
+.slogan {
+    position: absolute;
+    top: 380px;
+    right: 100px;
+    color: white;
+    text-align: center;
+}
+
+.slogan h1 {
+    font-size: 35px;
+}
+
+.slogan p {
+    font-size: 18px;
+}
+
+
+.wear{
+    color: rgb(45, 249, 55);
+}
+
