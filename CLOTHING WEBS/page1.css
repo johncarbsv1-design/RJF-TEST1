@@ -1,0 +1,393 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    background-image: url("blue.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(3, 3, 250, 0.436);
+    border-radius: 20px;
+    color: white;
+    height: 75px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+/* NAVIGATION */
+
+.home,
+.cate,
+.about {
+    position: absolute;
+    cursor: pointer;
+    top: 29px;
+    color: white;
+    white-space: nowrap;
+}
+
+.home {
+    right: 60%;
+}
+
+.cate {
+    right: 45%;
+}
+
+.about {
+    right: 30%;
+}
+
+/* =================================
+   INTRODUCTION
+================================= */
+
+.intro {
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 20px;
+    font-size: x-large;
+    max-width: calc(100% - 40px);
+}
+
+.wear {
+    color: rgb(45, 249, 55);
+}
+
+/* =================================
+   BROWSE NOW BUTTON
+================================= */
+
+.bn {
+    position: relative;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(23, 23, 208, 0.667);
+    width: 250px;
+    min-height: 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: x-large;
+    top: 130px;
+}
+
+.bn:hover {
+    transform: scale(1.08);
+    background-color: rgba(23, 23, 208, 1);
+}
+
+/* =================================
+   FEATURED PRODUCTS TITLE
+================================= */
+
+.featured {
+    position: relative;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+    width: 230px;
+    padding: 10px;
+    min-height: 50px;
+    background-color: rgba(21, 179, 219, 0.864);
+    border-radius: 10px;
+    margin-left: 175px;
+    margin-top: 25px;
+}
+
+/* =================================
+   PRODUCT IMAGES
+================================= */
+
+.img {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 150px));
+    justify-content: start;
+    gap: 50px 40px;
+    padding: 30px 30px 40px;
+}
+
+.img img {
+    position: static;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
+/* =================================
+   SLOGAN
+================================= */
+
+.slogan {
+    position: absolute;
+    top: 410px;
+    right: 50px;
+    color: white;
+    text-align: center;
+}
+
+.slogan h1 {
+    font-size: 35px;
+}
+
+.slogan p {
+    font-size: 18px;
+}
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 900px) {
+
+    .name {
+        font-size: 15px;
+        left: 80px;
+    }
+
+    .home {
+        right: 40%;
+    }
+
+    .cate {
+        right: 23%;
+    }
+
+    .about {
+        right: 3%;
+    }
+
+    .intro {
+        font-size: large;
+    }
+
+    .featured {
+        margin-left: 30px;
+        height: 100px;
+    }
+
+    .img {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px 25px;
+        padding: 25px;
+    }
+
+    .img img {
+        height: 160px;
+    }
+
+    .slogan {
+        padding-top: 40px;
+    }
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+
+    .header {
+        height: auto;
+        min-height: 125px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .name {
+        position: absolute;
+        left: 70px;
+        top: 12px;
+        bottom: auto;
+        margin: 0;
+        font-size: clamp(11px, 3.5vw, 16px);
+    }
+
+    .home,
+    .cate,
+    .about {
+        position: absolute;
+        top: 80px;
+        font-size: 12px;
+    }
+
+    .home {
+        left: 8%;
+        right: auto;
+    }
+
+    .cate {
+        left: 38%;
+        right: auto;
+    }
+
+    .about {
+        left: 68%;
+        right: auto;
+    }
+
+    /* INTRO */
+
+    .intro {
+        top: 20px;
+        left: 15px;
+        max-width: calc(100% - 30px);
+        font-size: 16px;
+    }
+
+    .modern {
+        font-size: 14px;
+    }
+
+    .wear {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    .discover {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    /* BROWSE NOW */
+
+    .bn {
+        width: 200px;
+        min-height: 65px;
+        top: 100px;
+        padding: 18px 10px;
+        font-size: 18px;
+    }
+
+    /* FEATURED PRODUCTS */
+
+    .featured {
+        width: 210px;
+        margin: 100px auto 0;
+        font-size: 17px;
+    }
+
+    /* PRODUCT IMAGES */
+
+    .img {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+        padding: 25px 20px;
+    }
+
+    .img img {
+        width: 100%;
+        height: 180px;
+        outline-offset: 4px;
+    }
+
+    /* SLOGAN */
+
+    .slogan {
+        position: relative;
+        top: 0;
+        right: auto;
+        text-align: center;
+        padding: 25px 10px;
+        margin-top: 40px;
+    }
+
+    .slogan h1 {
+        font-size: clamp(22px, 6vw, 30px);
+    }
+
+    .slogan p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* =================================
+   SMALL MOBILE SCREENS
+================================= */
+
+@media screen and (max-width: 360px) {
+
+    .name {
+        font-size: 10px;
+    }
+
+    .home,
+    .cate,
+    .about {
+        font-size: 11px;
+    }
+
+    .img {
+        gap: 25px 15px;
+        padding: 20px 15px;
+    }
+
+    .img img {
+        height: 145px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .discover {
+        font-size: 11px;
+    }
+}
+
