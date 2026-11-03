@@ -1,0 +1,531 @@
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(3, 3, 250, 0.436);
+    border-radius: 20px;
+    color: white;
+    height: 75px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    bottom: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/* NAVIGATION */
+
+.home,
+.cate,
+.about {
+    position: absolute;
+    cursor: pointer;
+    top: 29px;
+    color: white;
+    white-space: nowrap;
+}
+
+.home {
+    right: 60%;
+}
+
+.cate {
+    right: 45%;
+}
+
+.about {
+    right: 30%;
+}
+
+/* =================================
+   BACKGROUND
+================================= */
+
+body {
+    background-image: url("image1.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =================================
+   ABOUT US CONTENT
+================================= */
+
+.more {
+    position: relative;
+    left: 10px;
+    bottom: 1000px;
+    color: white;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 40px;
+    transform: rotate(-15deg);
+}
+
+.meet {
+    position: relative;
+    left: 350px;
+    bottom: 1000px;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* =================================
+   MEMBERS
+================================= */
+
+.Ry {
+    position: relative;
+    left: 360px;
+    bottom: 650px;
+    color: white;
+    font-weight: bold;
+}
+
+.Ro {
+    position: relative;
+    left: 550px;
+    font-weight: bold;
+    bottom: 936px;
+    color: white;
+}
+
+.Jo {
+    position: relative;
+    left: 800px;
+    bottom: 973px;
+    color: white;
+    font-weight: bold;
+}
+
+.Ja {
+    position: relative;
+    left: 1259px;
+    bottom: 1009px;
+    color: white;
+    font-weight: bold;
+}
+
+.Fi {
+    position: relative;
+    left: 1035px;
+    bottom: 1046px;
+    color: white;
+    font-weight: bold;
+}
+
+/* MEMBER ROLES */
+
+.Ryan {
+    position: relative;
+    left: 350px;
+    bottom: 1033px;
+    color: white;
+}
+
+.Roel {
+    position: relative;
+    left: 550px;
+    bottom: 1051px;
+    color: white;
+}
+
+.John {
+    position: relative;
+    left: 800px;
+    bottom: 1070px;
+    color: white;
+}
+
+.Jayvee {
+    position: relative;
+    left: 1259px;
+    bottom: 1088px;
+    color: white;
+}
+
+.Fieldy {
+    position: relative;
+    left: 1035px;
+    bottom: 1107px;
+    color: white;
+}
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.blue {
+    position: relative;
+    left: 8px;
+    bottom: 1050px;
+    color: white;
+    font-weight: 500;
+}
+
+.grate {
+    position: relative;
+    left: 8px;
+    bottom: 1050px;
+    color: white;
+    font-weight: 500;
+}
+
+.us {
+    position: relative;
+    left: 350px;
+    bottom: 1150px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* =================================
+   PROFILE PICTURES
+================================= */
+
+.profile-pic,
+.A,
+.B,
+.C,
+.D,
+.E,
+.F,
+.G {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #7dbaff;
+    position: relative;
+}
+
+.profile-pic {
+    bottom: 1380px;
+    left: 355px;
+}
+
+.A {
+    bottom: 1379px;
+    left: 733px;
+}
+
+.B {
+    bottom: 1379px;
+    left: 1113px;
+}
+
+.C {
+    bottom: 1379px;
+    left: 830px;
+}
+
+.D {
+    bottom: 1379px;
+    left: 290px;
+}
+
+.E {
+    bottom: 1130px;
+    left: 25px;
+}
+
+.F {
+    bottom: 1130px;
+    left: 90px;
+}
+
+.G {
+    bottom: 1130px;
+    left: 160px;
+}
+
+/* =================================
+   SOCIAL MEDIA
+================================= */
+
+.T1K {
+    position: relative;
+    left: 365px;
+    bottom: 1123px;
+    color: white;
+    font-weight: bold;
+}
+
+.FB {
+    position: relative;
+    left: 495px;
+    bottom: 1141px;
+    color: white;
+    font-weight: bold;
+}
+
+.IG {
+    position: relative;
+    left: 630px;
+    bottom: 1160px;
+    color: white;
+    font-weight: bold;
+}
+
+/* =================================
+   SMALL BUSINESS MESSAGE
+================================= */
+
+.small {
+    position: relative;
+    left: 850px;
+    bottom: 1310px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+.A1 {
+    width: 40px;
+    height: 39px;
+    border-radius: 1px;
+    object-fit: cover;
+    position: relative;
+    bottom: 1759px;
+    background-color: blue;
+    right: 249px;
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+
+    .header {
+        height: 65px;
+        width: 100%;
+        border-radius: 12px;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        left: 5px;
+    }
+
+    .name {
+        left: 60px;
+        top: 10px;
+        font-size: 11px;
+    }
+
+    .home,
+    .cate,
+    .about {
+        position: static;
+        font-size: 10px;
+    }
+
+    /* MAIN IMAGE */
+
+    body > img:first-of-type {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* MORE THAN JUST CLOTHES */
+
+    .more {
+        left: 10px;
+        bottom: 0;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .meet {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /* MEMBER NAMES */
+
+    .Ry,
+    .Ro,
+    .Jo,
+    .Ja,
+    .Fi {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+    /* MEMBER ROLES */
+
+    .Ryan,
+    .Roel,
+    .John,
+    .Jayvee,
+    .Fieldy {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+    /* DESCRIPTION */
+
+    .blue,
+    .grate {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin: 25px 10px;
+        font-size: 13px;
+    }
+
+    .us {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    /* PROFILE PICTURES */
+
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .profile-pic,
+    .A,
+    .B,
+    .C,
+    .D,
+    .E,
+    .F,
+    .G {
+        position: static;
+        width: 55px;
+        height: 55px;
+        margin: 8px;
+    }
+
+    /* SOCIAL MEDIA */
+
+    .T1K,
+    .FB,
+    .IG {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin: 12px;
+        font-size: 12px;
+    }
+
+    /* SMALL BUSINESS MESSAGE */
+
+    .small {
+        left: 0;
+        bottom: 0;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin: 40px auto;
+    }
+
+    .A1 {
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+
+}
+
+/* =================================
+   SMALL PHONES
+================================= */
+
+@media screen and (max-width: 400px) {
+
+    .name {
+        font-size: 9px;
+        left: 58px;
+    }
+
+    .home,
+    .cate,
+    .about {
+        font-size: 8px;
+    }
+
+    .header {
+        gap: 6px;
+    }
+
+    .more {
+        font-size: 25px;
+    }
+
+    .meet {
+        font-size: 19px;
+    }
+
+    .profile-pic,
+    .A,
+    .B,
+    .C,
+    .D,
+    .E,
+    .F,
+    .G {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+}
